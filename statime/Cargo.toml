@@ -1,0 +1,23 @@
+[package]
+name = "statime"
+readme = "README.md"
+description = "Precision Time Protocol implementation library for embedded and desktops"
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+
+[features]
+default = ["std", "serde"]
+std = []
+fuzz = ["std"]
+serde = ["dep:serde", "arrayvec/serde"]
+
+[dependencies]
+
+[dev-dependencies]
+serde_test.workspace = true

@@ -1,0 +1,11 @@
+[package]
+edition = "2021"
+name = "statime-stm32"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+
+[profile.release]
+debug = 2
+lto = "fat"
